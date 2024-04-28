@@ -1,0 +1,29 @@
+name: 🐞 Bug Report
+description: Report the issue you encountered
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for taking the time to fill out this bug report!
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: Issue Description
+      description: Describe the issue you encountered clearly and concisely.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction
+      description: Try to provide a [minimal reproduction](https://stackoverflow.com/help/minimal-reproducible-example), it could be a few steps, a code snippet, or even a screenshot.
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: If available, please provide relevant logs.
+    validations:
+      required: false

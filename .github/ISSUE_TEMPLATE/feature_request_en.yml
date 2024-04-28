@@ -1,0 +1,27 @@
+name: 🚀 Feature Request
+description: Request a new feature
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for taking the time to fill out this feature request!
+  - type: textarea
+    id: feature-reason
+    attributes:
+      label: Reason
+      description: Why do you need this feature? What problem will it solve?
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: Feature Description
+      description: Describe the feature you want clearly and concisely.
+    validations:
+      required: true
+  - type: textarea
+    id: suggested-solution
+    attributes:
+      label: Suggested Solution
+      description: Tell us your expected solution, such as "Add a new configuration item", etc.
+    validations:
+      required: true
