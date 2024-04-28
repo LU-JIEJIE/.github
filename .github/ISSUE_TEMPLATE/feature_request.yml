@@ -1,5 +1,5 @@
 name: 🚀 功能请求
-description: Propose a new feature
+description: 请求一个新功能
 labels: [enhancement]
 body:
   - type: markdown
@@ -7,10 +7,15 @@ body:
       value: |
         感谢您花时间填写这份功能请求报告！
   - type: textarea
+    id: feature-reason
+    attributes:
+      label: 原因
+      description: 为什么您需要这个功能？它会解决什么问题？
+  - type: textarea
     id: feature-description
     attributes:
       label: 功能描述
-      description: 清晰简洁地描述您想要的功能，以及它解决的问题。
+      description: 清晰简洁地描述您想要的功能。
     validations:
       required: true
   - type: textarea
