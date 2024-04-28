@@ -1,0 +1,22 @@
+name: 🚀 功能请求
+description: Propose a new feature
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢您花时间填写这份功能请求报告！
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: 功能描述
+      description: 清晰简洁地描述您想要的功能，以及它解决的问题。
+    validations:
+      required: true
+  - type: textarea
+    id: suggested-solution
+    attributes:
+      label: 实现方案
+      description: 告诉我们您期望的实现方案，比如“添加一个新的配置项”等等。
+    validations:
+      required: true

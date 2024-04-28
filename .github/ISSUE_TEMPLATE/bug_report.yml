@@ -1,0 +1,32 @@
+name: 🐞 问题反馈
+description: 反馈你所遇到的问题
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢你花时间填写这份问题反馈报告！
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: 问题描述
+      description: 清晰简洁地描述你遇到的问题。
+      placeholder: Bug description
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: 复现
+      description: 尽量提供一个[最小复现](https://stackoverflow.com/help/minimal-reproducible-example)，也许是几个步骤或一个代码片段，甚至是一个截图。
+      placeholder: Reproduction
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: 日志
+      description: 如果有的话，请提供相关日志。
+      placeholder: Logs...
+    validations:
+      required: false
